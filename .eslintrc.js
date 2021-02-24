@@ -20,6 +20,13 @@ module.exports = {
   rules: {
     semi: [2, 'never'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-
+    'react/jsx-props-no-spreading': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      alias: [
+        ['@', './src'],
+      ],
+    },
   },
 }

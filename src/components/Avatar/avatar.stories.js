@@ -7,7 +7,7 @@ import avatar4 from '@/assets/images/face-male-4.jpg'
 import Avatar from '.'
 
 export default {
-  title: 'Avatar',
+  title: 'UI/Avatar',
   component: Avatar,
 }
 

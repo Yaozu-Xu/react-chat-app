@@ -22,6 +22,7 @@ module.exports = {
     semi: [2, 'never'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/jsx-props-no-spreading': 'off',
+    'react/require-default-props': 'off',
   },
   settings: {
     'import/resolver': {

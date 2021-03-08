@@ -1,5 +1,4 @@
 import React from 'react'
-import '@/stories/global.css'
 import { ReactComponent as SmileIcon } from '@/assets/icons/smile.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'

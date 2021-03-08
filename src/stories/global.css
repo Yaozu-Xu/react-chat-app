@@ -1,3 +1,5 @@
+@import url("../index.css");
+
 .row-elements {
     display: flex;
 }

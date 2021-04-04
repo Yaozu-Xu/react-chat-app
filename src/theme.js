@@ -1,5 +1,7 @@
 export default {
   primaryColor: '#4F9DDE',
+  successColor: '#4CAF50',
+  dangerColor: '#e34651',
   green: '#34D859',
   gray: 'rgba(24, 28, 47, 0.2)',
   red: '#F34848',

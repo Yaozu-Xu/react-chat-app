@@ -1,6 +1,6 @@
 import React from 'react'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
-import NavBar, { MenuItem } from '.'
+import NavBar, { MenuItem } from './index'
 import 'styled-components/macro'
 
 export default {

@@ -3,7 +3,7 @@ import avatar1 from '@/assets/images/face-male-1.jpg'
 import avatar2 from '@/assets/images/face-male-2.jpg'
 import avatar3 from '@/assets/images/face-male-3.jpg'
 import avatar4 from '@/assets/images/face-male-4.jpg'
-import Avatar from '.'
+import Avatar from './index'
 
 export default {
   title: 'UI/Avatar',

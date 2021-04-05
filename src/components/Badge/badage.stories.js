@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
-import Badge from '.'
+import Badge from './index'
 
 export default {
   title: 'UI/Badge',

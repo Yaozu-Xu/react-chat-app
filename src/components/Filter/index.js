@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Text from '@/components/Text/index'
+import Text from '@/components/Text'
 import StyledFilter, { Filters, Actions } from './style'
 
 function Filter({ children, ...rest }) {

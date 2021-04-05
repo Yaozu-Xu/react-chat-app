@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import {
   useTheme,
 } from 'styled-components'
-import Avatar from '@/components/Avatar/index'
-import Paragraph from '@/components/Paragraph/index'
-import Icon from '@/components/Icon/index'
+import Avatar from '@/components/Avatar'
+import Paragraph from '@/components/Paragraph'
+import Icon from '@/components/Icon'
 import { ReactComponent as Replied } from '@/assets/icons/replied.svg'
 import StyledCard, {
   SubTitle,
@@ -17,6 +17,7 @@ import StyledCard, {
 
 function Card({
   children,
+  background = '#fff',
   avatarUrl,
   avatarStatus,
   title,
@@ -30,7 +31,7 @@ function Card({
 }) {
   const theme = useTheme()
   return (
-    <StyledCard active={active} {...rest}>
+    <StyledCard active={active} {...rest} background={background}>
       <Avatar status={avatarStatus} src={avatarUrl} />
       <Title>{title}</Title>
       <SubTitle>{subtitle}</SubTitle>
@@ -57,6 +58,7 @@ function Card({
 
 Card.propTypes = {
   children: PropTypes.any,
+  background: PropTypes.string,
   avatarUrl: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,

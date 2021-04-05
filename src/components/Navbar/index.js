@@ -31,6 +31,7 @@ NavBar.propTypes = {
 }
 
 MenuItem.propTypes = {
+  icon: PropTypes.any,
   active: PropTypes.bool,
   showBadge: PropTypes.bool,
 }

@@ -42,7 +42,7 @@ const StyledCard = styled.div`
     "description description description";
   grid-template-columns: 64px 1fr 1fr;
   row-gap: 16px;
-  background: ${({ theme }) => theme.background};
+  background: ${({ background }) => background};
   transition: 0.4s;
   &:hover {
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);

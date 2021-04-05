@@ -6,7 +6,6 @@ import {
 import Avatar from '@/components/Avatar'
 import Paragraph from '@/components/Paragraph'
 import Icon from '@/components/Icon'
-import { ReactComponent as Replied } from '@/assets/icons/replied.svg'
 import StyledCard, {
   SubTitle,
   Title,
@@ -26,7 +25,7 @@ function Card({
   description,
   count,
   active,
-  iconSvg = Replied,
+  iconSvg,
   ...rest
 }) {
   const theme = useTheme()

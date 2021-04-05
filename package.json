@@ -1,7 +1,7 @@
 {
   "name": "react-chat-app",
   "main": "lib/bundle",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A UI library of react for online chat application",
   "repository": "https://github.com/Yaozu-Xu/react-chat-app",
   "keywords": [

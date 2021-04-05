@@ -21,7 +21,7 @@ Button.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   children: PropTypes.any,
   type: PropTypes.oneOf(['primary', 'danger', 'success']),
-  shape: PropTypes.oneOf(['rect', 'danger', 'success']),
+  shape: PropTypes.oneOf(['rect', 'round']),
   color: PropTypes.string,
   size: PropTypes.number,
 }

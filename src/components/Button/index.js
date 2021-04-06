@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { ThemeProvider } from 'styled-components'
+import theme from '@/theme'
 import StyledButton from './style'
 
 function Button({
@@ -11,9 +13,11 @@ function Button({
   ...rest
 }) {
   return (
-    <StyledButton {...rest} type={type} shape={shape} size={size} color={color}>
-      {children}
-    </StyledButton>
+    <ThemeProvider theme={theme}>
+      <StyledButton {...rest} type={type} shape={shape} size={size} color={color}>
+        {children}
+      </StyledButton>
+    </ThemeProvider>
   )
 }
 

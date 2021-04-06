@@ -2,7 +2,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Badge from '@/components/Badge'
-import StyledNavBar, { StyledMenuIcon, StyledMenuItem } from './style'
+import Icon from '@/components/Icon'
+import StyledNavBar, { StyledMenuItem } from './style'
 
 function NavBar({ children, ...rest }) {
   return (
@@ -19,7 +20,7 @@ function MenuItem({
     <StyledMenuItem active={active} {...rest}>
       <a href="#">
         <Badge show={showBadge}>
-          <StyledMenuIcon icon={icon} />
+          {icon && <Icon icon={icon} />}
         </Badge>
       </a>
     </StyledMenuItem>

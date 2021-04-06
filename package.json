@@ -1,13 +1,14 @@
 {
   "name": "react-chat-app",
-  "main": "lib/bundle",
-  "version": "0.1.2",
+  "main": "lib/cjs/index",
+  "module": "lib/esm/index",
+  "version": "0.1.4",
   "description": "A UI library of react for online chat application",
   "repository": "https://github.com/Yaozu-Xu/react-chat-app",
   "keywords": [
     "react",
     "chat",
-    "reactjs",
+    "styled-component",
     "ui",
     "vite"
   ],

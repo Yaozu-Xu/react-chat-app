@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useTheme } from 'styled-components'
 import { ReactComponent as Play } from '@/assets/icons/play.svg'
 import { ReactComponent as Wave } from '@/assets/icons/wave.svg'
 import Button from '@/components/Button'
@@ -11,7 +10,6 @@ import StyledVoiceMessage from './style'
 function VoiceMessage({
   children, type, time, ...rest
 }) {
-  const theme = useTheme()
   return (
     <StyledVoiceMessage type={type} {...rest}>
       <Button size={40}>
@@ -23,7 +21,7 @@ function VoiceMessage({
           style={{ transform: 'translateX(1px)' }}
         />
       </Button>
-      <Icon icon={Wave} width="100%" height="100%" color={theme.primaryColor} />
+      <Icon icon={Wave} width="100%" height="100%" color='#4F9DDE' />
       <Text bold>{time}</Text>
 
     </StyledVoiceMessage>

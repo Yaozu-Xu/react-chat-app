@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useTheme } from 'styled-components'
 import PropTypes from 'prop-types'
 import { ReactComponent as ClipIcon } from '@/assets/icons/clip.svg'
 import { ReactComponent as SmileIcon } from '@/assets/icons/smile.svg'
@@ -20,7 +19,6 @@ function MessageBar({
   ...rest
 }) {
   const [emojiIconActive, setEmojiIconActive] = useState(false)
-  const theme = useTheme()
   return (
     <StyledMessageBar {...rest}>
       <Input
@@ -40,7 +38,7 @@ function MessageBar({
             >
               <Icon
                 icon={icon2}
-                color={emojiIconActive ? undefined : theme.gray3}
+                color={emojiIconActive ? undefined : 'rgba(24, 28, 47, 0.3)'}
               />
             </Popover>
             <Icon icon={icon3} />
@@ -54,11 +52,11 @@ function MessageBar({
 
 MessageBar.propTypes = {
   children: PropTypes.any,
-  button: PropTypes.element,
+  button: PropTypes.element.isRequired,
   icon2: PropTypes.any,
   prefixIcon: PropTypes.any,
   icon3: PropTypes.any,
-  popoverContent: PropTypes.element,
+  popoverContent: PropTypes.element.isRequired,
 }
 
 export default MessageBar

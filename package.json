@@ -42,6 +42,7 @@
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-links": "^6.1.17",
     "@storybook/react": "^6.1.17",
+    "@svgr/rollup": "^5.5.0",
     "@svgr/webpack": "^5.5.0",
     "@vitejs/plugin-react-refresh": "^1.1.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
@@ -63,6 +64,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-jsx": "^1.0.3",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-url": "^3.0.1",
     "vite": "^2.0.0-beta.65",
     "vite-plugin-react-svg": "^0.2.0"
   },

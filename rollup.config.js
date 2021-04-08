@@ -1,10 +1,12 @@
 import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
+import url from 'rollup-plugin-url'
+
+const svgr = require('@svgr/rollup').default
 
 export default {
   input: {
-    index: 'src/index',
     Avatar: 'src/components/Avatar',
     Badge: 'src/components/Badge',
     Icon: 'src/components/Icon',
@@ -16,7 +18,12 @@ export default {
     Paragraph: 'src/components/Paragraph',
     Filter: 'src/components/Filter',
     Select: 'src/components/Select',
-    Card: 'src/components/Card',
+    MessageBar: 'src/components/MessageBar',
+    Popover: 'src/components/Popover',
+    Input: 'src/components/Input',
+    Bubble: 'src/components/Bubble',
+    VoiceMessage: 'src/components/VoiceMessage',
+    index: 'src/index',
   },
   output: [{
     dir: 'lib/esm',
@@ -35,6 +42,8 @@ export default {
       exclude: 'node_modules/**',
     }),
     resolve(),
+    url(),
+    svgr(),
     commonjs({
       ignoreGlobal: true,
       include: /\/node_modules\//,

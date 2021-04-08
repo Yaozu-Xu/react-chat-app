@@ -1,6 +1,7 @@
 src
 __mocks__
 _templates
+example
 .storybook
 .eslintrc.js
 .gitignore

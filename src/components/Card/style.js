@@ -21,12 +21,12 @@ const SubTitle = styled(Text)`
 const Description = styled.div`
   grid-area: description;
   display: grid;
-  grid-template-columns: 30px 1fr 30px;
+  grid-template-columns: 1fr 30px;
+  ${(iconSvg) => iconSvg && css`
+  grid-template-columns: 24px 1fr 30px;
+  `}
   align-items: center;
-  ${({ replied }) => replied
-    && css`
-      grid-template-columns: 24px 1fr 30px;
-    `}
+
 `
 
 const UnreadBadge = styled(Badge)`

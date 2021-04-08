@@ -1,5 +1,5 @@
 import React from 'react'
-import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
+import { ReactComponent as Replied } from '@/assets/icons/replied.svg'
 import NavBar, { MenuItem } from './index'
 import 'styled-components/macro'
 
@@ -15,6 +15,6 @@ export const Menu = () => (
   background-color: ${({ theme }) => theme.darkPurple};
    width: 100px;`}
   >
-    <MenuItem showBadge active icon={faCommentDots} />
+    <MenuItem showBadge active icon={Replied} />
   </div>
 )

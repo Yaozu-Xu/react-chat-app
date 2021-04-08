@@ -21,12 +21,12 @@ const SubTitle = styled(Text)`
 const Description = styled.div`
   grid-area: description;
   display: grid;
-  grid-template-columns: 30px 1fr 30px;
+  grid-template-columns: 1fr 30px;
+  ${(iconSvg) => iconSvg && css`
+  grid-template-columns: 24px 1fr 30px;
+  `}
   align-items: center;
-  ${({ replied }) => replied
-    && css`
-      grid-template-columns: 24px 1fr 30px;
-    `}
+
 `
 
 const UnreadBadge = styled(Badge)`
@@ -42,7 +42,7 @@ const StyledCard = styled.div`
     "description description description";
   grid-template-columns: 64px 1fr 1fr;
   row-gap: 16px;
-  background: ${({ theme }) => theme.background};
+  background: ${({ background }) => background};
   transition: 0.4s;
   &:hover {
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);

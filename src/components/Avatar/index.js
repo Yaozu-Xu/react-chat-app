@@ -1,18 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import { ThemeProvider } from 'styled-components'
+import theme from '@/theme'
 import AvatarWrapper, { AvatarClip, AvatarImage, StatusIcon } from './style'
 
 function Avatar({
   src, size = '48px', status, StatusIconSize = '8px', ...rest
 }) {
   return (
-    <AvatarWrapper {...rest}>
-      {status && <StatusIcon status={status} size={StatusIconSize} />}
-      <AvatarClip size={size}>
-        <AvatarImage src={src} alt="" />
-      </AvatarClip>
-    </AvatarWrapper>
+    <ThemeProvider theme={theme}>
+      <AvatarWrapper {...rest}>
+        {status && <StatusIcon status={status} size={StatusIconSize} />}
+        <AvatarClip size={size}>
+          <AvatarImage src={src} alt="" />
+        </AvatarClip>
+      </AvatarWrapper>
+    </ThemeProvider>
+
   )
 }
 

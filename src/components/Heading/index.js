@@ -11,7 +11,6 @@ function Heading({ children, level, ...rest }) {
 }
 
 Heading.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
   children: PropTypes.any,
   level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
 }

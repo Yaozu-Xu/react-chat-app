@@ -28,7 +28,7 @@ function MenuItem({
 }
 
 NavBar.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.any,
 }
 
 MenuItem.propTypes = {

@@ -28,9 +28,11 @@ function MessageBar({
           <IconContainer>
             <Popover
               content={(
+                PopoverContent && (
                 <StyledPopoverContent>
                   <PopoverContent />
                 </StyledPopoverContent>
+                )
               )}
               offset={{ x: '-25%' }}
               onVisible={() => setEmojiIconActive(true)}
@@ -52,11 +54,11 @@ function MessageBar({
 
 MessageBar.propTypes = {
   children: PropTypes.any,
-  button: PropTypes.element.isRequired,
+  button: PropTypes.any,
   icon2: PropTypes.any,
   prefixIcon: PropTypes.any,
   icon3: PropTypes.any,
-  popoverContent: PropTypes.element.isRequired,
+  popoverContent: PropTypes.any,
 }
 
 export default MessageBar

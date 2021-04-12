@@ -3,7 +3,7 @@
   "main": "lib/cjs/index",
   "module": "lib/esm/index",
   "typings": "lib/cjs/index",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A UI library of react for online chat application",
   "repository": "https://github.com/Yaozu-Xu/react-chat-app",
   "keywords": [

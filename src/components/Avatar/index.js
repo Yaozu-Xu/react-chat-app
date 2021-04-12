@@ -21,7 +21,7 @@ function Avatar({
 }
 
 Avatar.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string,
   size: PropTypes.string,
   status: PropTypes.oneOf(['online', 'offline']),
   StatusIconSize: PropTypes.string,

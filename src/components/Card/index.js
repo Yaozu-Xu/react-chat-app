@@ -36,7 +36,7 @@ function Card({
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
         <RightLabel>{rightLabel}</RightLabel>
-        <Description>
+        <Description iconSvg={iconSvg}>
           {iconSvg && (
           <Icon
             width={16}
@@ -68,7 +68,7 @@ Card.propTypes = {
   count: PropTypes.number,
   avatarStatus: PropTypes.any,
   active: PropTypes.bool,
-  iconSvg: PropTypes.any,
+  iconSvg: PropTypes.func,
 }
 
 export default Card

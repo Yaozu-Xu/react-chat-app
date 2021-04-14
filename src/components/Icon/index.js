@@ -20,7 +20,7 @@ function Icon({
 }
 
 Icon.propTypes = {
-  icon: PropTypes.func,
+  icon: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   width: PropTypes.oneOfType([PropTypes.number, PropTypes
     .string]),
   height: PropTypes.oneOfType([PropTypes.number, PropTypes

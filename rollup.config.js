@@ -10,6 +10,7 @@ export default {
     Avatar: 'src/components/Avatar',
     Badge: 'src/components/Badge',
     Icon: 'src/components/Icon',
+    Divider: 'src/components/Divider',
     Navbar: 'src/components/Navbar',
     Text: 'src/components/Text',
     Button: 'src/components/Button',

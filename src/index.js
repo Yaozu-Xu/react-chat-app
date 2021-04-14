@@ -3,6 +3,7 @@ import Badge from './components/Badge'
 import Bubble from './components/Bubble'
 import Button from './components/Button'
 import Card from './components/Card'
+import Divider from './components/Divider'
 import Filter from './components/Filter'
 import Heading from './components/Heading'
 import Icon from './components/Icon'
@@ -29,6 +30,7 @@ export {
   Select,
   Card,
   Option,
+  Divider,
   VoiceMessage,
   Popover,
   Bubble,

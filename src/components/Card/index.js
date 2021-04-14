@@ -23,6 +23,7 @@ function Card({
   title,
   subtitle,
   rightLabel,
+  subLabel: SubLabel,
   description,
   count,
   active,
@@ -35,6 +36,7 @@ function Card({
         <Avatar status={avatarStatus} src={avatarUrl} />
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
+        {SubLabel && <SubLabel style={{'grid-area': sublabel}}></SubLabel>}
         <RightLabel>{rightLabel}</RightLabel>
         <Description iconSvg={iconSvg}>
           {iconSvg && (
@@ -64,11 +66,12 @@ Card.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   rightLabel: PropTypes.string,
+  subLabel: PropTypes.element,
   description: PropTypes.string,
   count: PropTypes.number,
   avatarStatus: PropTypes.any,
   active: PropTypes.bool,
-  iconSvg: PropTypes.func,
+  iconSvg: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
 }
 
 export default Card

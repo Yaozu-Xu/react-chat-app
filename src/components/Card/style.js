@@ -38,9 +38,9 @@ const StyledCard = styled.div`
   display: grid;
   grid-template-areas:
     "avatar title label"
-    "avatar subtitle subtitle"
+    "avatar subtitle sublabel"
     "description description description";
-  grid-template-columns: 64px 1fr 1fr;
+  grid-template-columns: 24px 1fr 1fr;
   row-gap: 16px;
   background: ${({ background }) => background};
   transition: 0.4s;

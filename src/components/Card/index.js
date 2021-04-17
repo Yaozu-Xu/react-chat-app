@@ -36,7 +36,7 @@ function Card({
         <Avatar status={avatarStatus} src={avatarUrl} />
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
-        {SubLabel && <SubLabel style={{'grid-area': sublabel}}></SubLabel>}
+        {SubLabel && <SubLabel style={{ 'grid-area': 'sublabel' }} />}
         <RightLabel>{rightLabel}</RightLabel>
         <Description iconSvg={iconSvg}>
           {iconSvg && (

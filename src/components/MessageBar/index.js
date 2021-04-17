@@ -3,18 +3,31 @@ import PropTypes from 'prop-types'
 import { ReactComponent as ClipIcon } from '@/assets/icons/clip.svg'
 import { ReactComponent as SmileIcon } from '@/assets/icons/smile.svg'
 import { ReactComponent as MicrophoneIcon } from '@/assets/icons/microphone.svg'
+import { ReactComponent as PlaneIcon } from '@/assets/icons/plane.svg'
 import Input from '@/components/Input'
 import Icon from '@/components/Icon'
 import Popover from '@/components/Popover'
-
+import Button from '@/components/Button'
 import StyledMessageBar, { StyledPopoverContent, IconContainer } from './style'
+
+function DefaultButton() {
+  return (
+    <Button size={52}>
+      <Icon
+        icon={PlaneIcon}
+        color="white"
+        style={{ transform: 'translateX(-2px)' }}
+      />
+    </Button>
+  )
+}
 
 function MessageBar({
   children,
   prefixIcon = ClipIcon,
   icon2 = SmileIcon,
   icon3 = MicrophoneIcon,
-  button: MessageButton,
+  button: MessageButton = DefaultButton,
   popoverContent: PopoverContent,
   ...rest
 }) {
@@ -44,7 +57,8 @@ function MessageBar({
               />
             </Popover>
             <Icon icon={icon3} />
-            <MessageButton />
+            {MessageButton
+            && <MessageButton />}
           </IconContainer>
         )}
       />

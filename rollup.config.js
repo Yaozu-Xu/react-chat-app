@@ -24,6 +24,12 @@ export default {
     Input: 'src/components/Input',
     Bubble: 'src/components/Bubble',
     VoiceMessage: 'src/components/VoiceMessage',
+    Profile: 'src/components/Profile',
+    DropDown: 'src/components/DropDown',
+    TitleBar: 'src/components/TitleBar',
+    FilterList: 'src/components/FilterList',
+    ChatApp: 'src/components/ChatApp',
+    Conversation: 'src/components/Conversation',
     index: 'src/index',
   },
   output: [{

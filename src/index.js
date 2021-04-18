@@ -16,6 +16,12 @@ import Popover from './components/Popover'
 import Select from './components/Select'
 import Text from './components/Text'
 import VoiceMessage from './components/VoiceMessage'
+import Profile from './components/Profile'
+import DropDown from './components/DropDown'
+import TitleBar from './components/TitleBar'
+import FilterList from './components/FilterList'
+import ChatApp from './components/ChatApp'
+import Conversation from './components/Conversation'
 
 export {
   Avatar,
@@ -36,4 +42,11 @@ export {
   Bubble,
   Input,
   MessageBar,
+  Profile,
+  DropDown,
+  FilterList,
+  Conversation,
+  TitleBar,
 }
+
+export default ChatApp

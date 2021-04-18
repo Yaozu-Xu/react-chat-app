@@ -1,0 +1,33 @@
+image: node:latest
+
+variables:
+   npm_config_cache: "$CI_PROJECT_DIR/.npm"
+   NODE_ENV: 'development'
+
+cache:
+   key:
+     files:
+        - package.json
+   paths:
+      - .npm
+      - node_modules
+
+stages:
+  - install
+  - build
+  - test
+
+install_dependencies:
+  stage: install
+  script:
+    - npm ci
+
+build:
+  stage: build
+  script:
+    - npm run build
+
+ui_test:
+  stage: test
+  script:
+    - npm run test

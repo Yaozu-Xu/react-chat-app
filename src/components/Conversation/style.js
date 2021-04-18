@@ -23,7 +23,7 @@ const StyledConversation = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  border: 1px solid ${({ theme }) => theme.gray3};
+  border: 1px solid ${({ theme }) => theme.gray4};
 
   & > *:last-child {
     align-self: end;

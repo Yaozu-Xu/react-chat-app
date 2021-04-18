@@ -24,7 +24,7 @@ function Bubble({
 
 Bubble.propTypes = {
   children: PropTypes.any,
-  type: PropTypes.oneOf(['from']),
+  type: PropTypes.oneOf(['from', 'to']),
   time: PropTypes.string,
 }
 

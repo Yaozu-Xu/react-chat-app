@@ -11,10 +11,10 @@ export default {
 export const Default = () => <NavBar>default</NavBar>
 
 export const Menu = () => (
-  <div css={`
+  <NavBar css={`
   background-color: ${({ theme }) => theme.darkPurple};
    width: 100px;`}
   >
     <MenuItem showBadge active icon={Replied} />
-  </div>
+  </NavBar>
 )

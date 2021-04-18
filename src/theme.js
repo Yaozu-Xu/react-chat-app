@@ -8,6 +8,10 @@ export default {
   darkPurple: '#292F4C',
   gray2: 'rgba(241, 237, 237, 0.3)',
   gray3: 'rgba(24, 28, 47, 0.3)',
+  gray4: '#EFECE8',
+  gray5: '#D8D8D8',
+  grediantGray:
+  'linear-gradient(119.19deg, #FFFFFF 0%, #F8F8F8 65.34%, #FFFFFF 100%)',
   grayDark: '#181C2F',
   normal: '1.4rem',
   medium: '1.6rem',

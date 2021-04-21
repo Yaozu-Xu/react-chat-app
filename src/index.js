@@ -9,7 +9,8 @@ import Heading from './components/Heading'
 import Icon from './components/Icon'
 import Input from './components/Input'
 import MessageBar from './components/MessageBar'
-import Navbar from './components/Navbar'
+import MessageList from './components/MessageList'
+import Navbar, { MenuItem } from './components/Navbar'
 import Option from './components/Option'
 import Paragraph from './components/Paragraph'
 import Popover from './components/Popover'
@@ -32,6 +33,8 @@ export {
   Button,
   Filter,
   Heading,
+  MenuItem,
+  MessageList,
   Paragraph,
   Select,
   Card,

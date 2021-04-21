@@ -20,6 +20,7 @@ export default {
     Filter: 'src/components/Filter',
     Select: 'src/components/Select',
     MessageBar: 'src/components/MessageBar',
+    MessageList: 'src/components/MessageList',
     Popover: 'src/components/Popover',
     Input: 'src/components/Input',
     Bubble: 'src/components/Bubble',

@@ -23,8 +23,8 @@ const AlbumTitle = styled.div`
 
   & > a {
     text-decoration: none;
-    font-size: ${({ theme }) => theme.normal};
-    color: ${({ theme }) => theme.primaryColor};
+    font-size: 1.4rem;
+    color: #4F9DDE;
     &::after {
       display: inline-block;
       content: url(${arrowRight});

@@ -9,7 +9,7 @@ const DropdownContainer = styled.div`
   position: absolute;
   white-space: nowrap;
   padding: 4px 26px;
-  background: ${({ theme }) => theme.background};
+  background: white;
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
 
   display: ${({ visible }) => (visible ? 'block' : 'none')};

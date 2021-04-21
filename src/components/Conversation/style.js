@@ -9,21 +9,16 @@ const Conversations = styled.div`
   width: 100%;
   overflow-y: auto;
   flex: 1;
-
   & > * {
     margin: 10px 0;
   }
-`
-
-const MyBubble = styled(Bubble).attrs({ type: 'from' })`
-  align-self: flex-end;
 `
 
 const StyledConversation = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  border: 1px solid ${({ theme }) => theme.gray4};
+  border: 1px solid #EFECE8;
 
   & > *:last-child {
     align-self: end;
@@ -31,4 +26,4 @@ const StyledConversation = styled.div`
 `
 
 export default StyledConversation
-export { Conversations, MyBubble }
+export { Conversations }

@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import MessageBar from '@/components/MessageBar'
 import { useSpring } from 'react-spring'
 import StyledConversation, { Conversations } from './style'
 
 function Conversation({
-  titleBar, children, ...rest
+  titleBar, children,
+  messageBar,
+  ...rest
 }) {
   const convsAnimeProps = useSpring({
     opacity: 1,
@@ -19,14 +20,15 @@ function Conversation({
       <Conversations style={convsAnimeProps}>
         {children}
       </Conversations>
-      <MessageBar />
+      {messageBar}
     </StyledConversation>
   )
 }
 
 Conversation.propTypes = {
   children: PropTypes.any,
-  titleBar: PropTypes.any,
+  titleBar: PropTypes.element,
+  messageBar: PropTypes.element,
 }
 
 export default Conversation

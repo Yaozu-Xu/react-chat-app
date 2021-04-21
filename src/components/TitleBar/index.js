@@ -17,6 +17,7 @@ function TitleBar({
     delay: 500,
   }),
   style,
+  status = 'online',
   onAvatarClick,
   onVideoClicked,
   avatarUrl,
@@ -26,7 +27,7 @@ function TitleBar({
 }) {
   return (
     <StyledTitleBar style={{ ...style, ...animeProps }} {...rest}>
-      <Avatar onClick={onAvatarClick} status="offline" src={avatarUrl} />
+      <Avatar onClick={onAvatarClick} status={status} src={avatarUrl} />
       {children}
       <Actions>
         <Icon opacity={0.3} icon={Call} onClick={onVideoClicked} />
@@ -57,6 +58,7 @@ TitleBar.propTypes = {
   children: PropTypes.any,
   dropDown: PropTypes.any,
   onAvatarClick: PropTypes.func,
+  status: PropTypes.oneOf(['online', 'offline']),
   onVideoClicked: PropTypes.func,
   animeProps: PropTypes.object,
   style: PropTypes.object,

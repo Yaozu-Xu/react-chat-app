@@ -4,6 +4,7 @@ import {
 } from '@/utils/mixins'
 
 const StyledNavBar = styled.div`
+  height: 100vh;
 `
 
 const StyledMenuItem = styled.div`

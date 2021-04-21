@@ -1,0 +1,33 @@
+image: node:latest
+
+variables:
+   npm_config_cache: "$CI_PROJECT_DIR/.yarn"
+   NODE_ENV: 'development'
+
+cache:
+   key:
+     files:
+        - package.json
+   paths:
+      - .yarn
+      - node_modules
+
+stages:
+  - install
+  - build
+  - test
+
+install_dependencies:
+  stage: install
+  script:
+    - yarn install
+
+build:
+  stage: build
+  script:
+    - yarn run build
+
+ui_test:
+  stage: test
+  script:
+    - yarn run test

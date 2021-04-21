@@ -1,8 +1,6 @@
 import React from 'react'
 import { ReactComponent as OptionsIcon } from '@/assets/icons/options.svg'
-import Icon from '@/components/Icon'
-import Button from '@/components/Button'
-import { ReactComponent as PlaneIcon } from '@/assets/icons/plane.svg'
+import Icon from '@/components/Icon/index'
 import MessageBar from './index'
 
 export default {
@@ -25,20 +23,9 @@ function PopoverContent() {
     </div>
   )
 }
-function MessageButton() {
-  return (
-    <Button size={52}>
-      <Icon
-        icon={PlaneIcon}
-        color="white"
-        style={{ transform: 'translateX(-2px)' }}
-      />
-    </Button>
-  )
-}
 
 export const Default = () => (
   <div style={{ marginTop: 80 }}>
-    <MessageBar popoverContent={PopoverContent} button={MessageButton} />
+    <MessageBar popoverContent={PopoverContent} />
   </div>
 )

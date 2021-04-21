@@ -28,6 +28,7 @@ const MessageText = styled(Text)``
 
 const typeVariants = {
   from: css`
+    align-self: flex-end;
     ${BubbleWrapper} {
       background-color: ${({ theme }) => theme.primaryColor};
     }

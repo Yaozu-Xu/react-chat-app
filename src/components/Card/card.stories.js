@@ -56,9 +56,7 @@ export const RepliedInactive = () => (
     avatarStatus="online"
     subtitle="online"
     rightLabel="3 hours"
-    iconSvg={Replied}
     description="xxxxxxxxx"
     unreadCount={2}
-    replied
   />
 )

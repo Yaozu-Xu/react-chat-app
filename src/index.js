@@ -9,13 +9,20 @@ import Heading from './components/Heading'
 import Icon from './components/Icon'
 import Input from './components/Input'
 import MessageBar from './components/MessageBar'
-import Navbar from './components/Navbar'
+import MessageList from './components/MessageList'
+import Navbar, { MenuItem } from './components/Navbar'
 import Option from './components/Option'
 import Paragraph from './components/Paragraph'
 import Popover from './components/Popover'
 import Select from './components/Select'
 import Text from './components/Text'
 import VoiceMessage from './components/VoiceMessage'
+import Profile from './components/Profile'
+import DropDown from './components/DropDown'
+import TitleBar from './components/TitleBar'
+import FilterList from './components/FilterList'
+import ChatApp from './components/ChatApp'
+import Conversation from './components/Conversation'
 
 export {
   Avatar,
@@ -26,6 +33,8 @@ export {
   Button,
   Filter,
   Heading,
+  MenuItem,
+  MessageList,
   Paragraph,
   Select,
   Card,
@@ -36,4 +45,11 @@ export {
   Bubble,
   Input,
   MessageBar,
+  Profile,
+  DropDown,
+  FilterList,
+  Conversation,
+  TitleBar,
 }
+
+export default ChatApp
